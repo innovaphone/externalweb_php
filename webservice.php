@@ -1,9 +1,10 @@
 <?php
 session_start();
 
-if (empty($_SESSION["authenticated"])) {
-    http_response_code(403); // Zugriff verweigert
-    echo "<h1>Zugriff verweigert</h1><p>Du bist nicht eingeloggt.</p>";
+if (!isset($_SESSION["authenticated"]) || $_SESSION["authenticated"] !== true) {
+    http_response_code(403); // Access denied
+    header('Content-Type: text/html; charset=utf-8');
+    echo "<h1>Access Denied</h1><p>You are not logged in.</p>";
     exit;
 }
 ?>
@@ -15,6 +16,6 @@ if (empty($_SESSION["authenticated"])) {
 </head>
 <body>
     <h1>Webservice</h1>
-    <p>Nur sichtbar, wenn Session gültig ist.</p>
+    <p>Only visible if the session is valid.</p>
 </body>
 </html>
