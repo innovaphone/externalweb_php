@@ -7,7 +7,7 @@ This is a sample PHP application that handles sessions, performs authentication,
 * **Session Management**: Stores user session data on the server using PHP sessions.
 * **Challenge-Response Authentication**: Uses a SHA-256 hashed digest to verify credentials.
 * **Login Mechanism**: `/login` endpoint processes authentication requests.
-* **Access Control**: Grants access to `/app.htm` only after successful authentication.
+* **Access Control**: Grants access to `/webservice.php` only after successful authentication.
 
 ### Getting Started
 
