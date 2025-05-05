@@ -1,6 +1,6 @@
 ## PHP Application with Session Management and Authentication
 
-This is a sample PHP application that handles sessions, performs authentication, and serves static files. It features a basic challenge-response mechanism to securely grant access to a protected HTML page (`app.htm`).
+This is a sample PHP application that handles sessions, performs authentication, and serves static files. It features a basic challenge-response mechanism to securely grant access to a protected page (`webservice.php`).
 
 ### Features
 
